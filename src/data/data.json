@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Next.js Fetching শিখা",
+        "description": "Next.js এর Server-side এবং Client-side ডাটা ফেচিং প্র্যাকটিস করা।",
+        "status": "completed",
+        "priority": "high",
+        "dueDate": "2026-04-27"
+    },
+    {
+        "id": 2,
+        "title": "HeroUI সেটআপ করা",
+        "description": "প্রজেক্টে HeroUI লাইব্রেরি ইন্সটল করে নেভিগেশন বার তৈরি করা।",
+        "status": "in-progress",
+        "priority": "medium",
+        "dueDate": "2026-04-28"
+    },
+    {
+        "id": 3,
+        "title": "Generate Static Params ব্যবহার",
+        "description": "ডাইনামিক রুটের জন্য স্ট্যাটিক প্যারামস সেটআপ করে পারফরম্যান্স চেক করা।",
+        "status": "pending",
+        "priority": "high",
+        "dueDate": "2026-04-29"
+    },
+    {
+        "id": 4,
+        "title": "ক্যাশিং পলিসি টেস্ট",
+        "description": "force-cache এবং no-store ব্যবহার করে ডাটা ক্যাশিং পরীক্ষা করা।",
+        "status": "pending",
+        "priority": "low",
+        "dueDate": "2026-04-30"
+    },
+    {
+        "id": 5,
+        "title": "প্রজেক্ট ডেপ্লয়মেন্ট",
+        "description": "পুরো অ্যাপটি Vercel-এ ডেপ্লয় করা এবং ইনভায়রনমেন্ট ভেরিয়েবল সেট করা।",
+        "status": "pending",
+        "priority": "high",
+        "dueDate": "2026-05-01"
+    }
+]
