@@ -2,8 +2,11 @@
 import { Card, Link } from "@heroui/react";
 import React from 'react'
 
-function TaskCard({task}) {
-    const {title, description} = task;
+
+
+
+function TaskCard({ task }) {
+    const { title, description } = task;
     return (
         <div>
             <Card className="w-[400px]">
@@ -11,7 +14,7 @@ function TaskCard({task}) {
                 <Card.Header>
                     <Card.Title>{title}</Card.Title>
                     <Card.Description>
-                      {description}
+                        {description}
                     </Card.Description>
                 </Card.Header>
                 <Card.Footer>
