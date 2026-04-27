@@ -1,16 +1,12 @@
 
 import { Card, Link } from "@heroui/react";
-import React from 'react'
-
-
-
+import React from 'react';
 
 function TaskCard({ task }) {
     const { title, description } = task;
     return (
         <div>
             <Card className="w-[400px]">
-                {/* <CircleDollar aria-label="Dollar sign icon" className="text-primary size-6" role="img" /> */}
                 <Card.Header>
                     <Card.Title>{title}</Card.Title>
                     <Card.Description>
@@ -20,7 +16,7 @@ function TaskCard({ task }) {
                 <Card.Footer>
                     <Link
                         aria-label="Go to Acme Creator Hub (opens in new tab)"
-                        href="https://heroui.com"
+                        href="#"
                         rel="noopener noreferrer"
                         target="_blank"
                     >
