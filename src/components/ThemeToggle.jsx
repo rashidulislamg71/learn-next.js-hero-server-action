@@ -3,14 +3,14 @@
 
 
 import { Switch, useTheme } from "@heroui/react";
-import {Sun, Moon} from '@gravity-ui/icons';
+import { Sun, Moon } from '@gravity-ui/icons';
 
 export function ThemeToggle() {
-const {theme, setTheme} = useTheme();
+    const { theme, setTheme } = useTheme();
 
     return (
         <div>
-            <Switch onChange={()=> setTheme(theme === "dark" ? "light" : "dark")}>
+            <Switch onChange={() => setTheme(theme === "dark" ? "light" : "dark")}>
                 {({ isSelected }) => (
                     <>
                         <Switch.Control
@@ -21,11 +21,9 @@ const {theme, setTheme} = useTheme();
                             >
                                 <Switch.Icon>
                                     {isSelected ? (
-                                        <Moon className="size-4 text-cyan-600" />
-
-                                    ) : (
                                         <Sun className="size-4 text-blue-600" />
-
+                                    ) : (
+                                        <Moon className="size-4 text-cyan-600" />
                                     )}
                                 </Switch.Icon>
                             </Switch.Thumb>

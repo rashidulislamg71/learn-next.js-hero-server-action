@@ -1,3 +1,4 @@
+import AddToTask from '@/components/AddToTask'
 import TaskCard from '@/components/TaskCard'
 import { getTasks } from '@/lib/task'
 import React from 'react'
@@ -9,6 +10,7 @@ async function TasksPage() {
     return (
         <div>
             <h2>Tasks: {tasks.length} </h2>
+            <AddToTask />
 
             <div className='grid grid-cols-3 gap-5'>
 
