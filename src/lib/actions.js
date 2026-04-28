@@ -1,3 +1,6 @@
+import { revalidatePath } from "next/cache";
+import { postTask } from "./task";
+
 export async function createATask(formData) {
   "use server";
 
@@ -7,6 +10,11 @@ export async function createATask(formData) {
   const assigned = formData.get("assigned");
   const priority = formData.get("priority");
 
-   const newTask = Object.fromEntries(formData.entries())
+   const newTask = Object.fromEntries(formData.entries());
 
+  const res =  await postTask(newTask);
+  if(res.ok){
+    revalidatePath("/tasks");
+  }
+return res;
 }
